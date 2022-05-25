@@ -1,13 +1,19 @@
 package com.example.sep3_t2;
 
+import com.example.sep3_t2.networking.FlightClient;
+import com.example.sep3_t2.networking.TripClient;
 import com.example.sep3_t2.networking.UserClient;
 import java.io.IOException;
 
 public class Client implements Runnable{
     UserClient userClient;
+    FlightClient flightClient;
+    TripClient tripClient;
 
     public Client() throws IOException{
         userClient = new UserClient();
+        flightClient = new FlightClient();
+        tripClient = new TripClient();
     }
 
     @Override

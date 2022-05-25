@@ -10,7 +10,7 @@ import java.security.NoSuchAlgorithmException;
 @SpringBootApplication (exclude = {DataSourceAutoConfiguration.class })
 public class Sep3T2Application {
 
-    public static void main(String[] args) throws IOException, NoSuchAlgorithmException {
+    public static void main(String[] args) throws IOException {
         SpringApplication.run(Sep3T2Application.class, args);
         Client client = new Client();
         client.run();
